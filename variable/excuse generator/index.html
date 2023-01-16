@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Excuse Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Excuse Generator</h1>
+    </header>
+    <main>
+      <form action="assets/php/excuse.php">
+        <div class="name">
+          <p>Name of the child:</p>
+          <input type="text" name="name" />
+        </div>
+        <div class="gender">
+          <p>Gender:</p>
+          <p>Male:</p>
+          <input type="radio" name="gender" value="Male" />
+          <p>Female:</p>
+          <input type="radio" name="gender" value="Female" />
+        </div>
+        <div class="teacher">
+          <p>Teacher:</p>
+          <input type="text" name="teacher" />
+        </div>
+        <div class="absence">
+          <p>Absence's reason:</p>
+          <p>Illness:</p>
+          <input type="radio" name="reason" value="illness" />
+          <p>/Pet death:</p>
+          <input type="radio" name="reason" value="petDeath" />
+          <p>/Significant extra-curricular activity:</p>
+          <input type="radio" name="reason" value="activity" />
+          <p>/Other:</p>
+          <input type="radio" name="reason" value="other" />
+        </div>
+        <input type="submit" />
+      </form>
+    </main>
+  </body>
+</html>
